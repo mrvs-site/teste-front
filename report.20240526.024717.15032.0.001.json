@@ -1,0 +1,679 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20240526.024717.15032.0.001.json",
+    "dumpEventTime": "2024-05-26T02:47:17Z",
+    "dumpEventTimeStamp": "1716702437983",
+    "processId": 15032,
+    "threadId": null,
+    "cwd": "C:\\dev\\desafio\\front\\processo-app",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:/dev/desafio/front/processo-app/node_modules/@angular/compiler-cli/ngcc/src/execution/cluster/worker.js",
+      "--source",
+      "C:\\dev\\desafio\\front\\processo-app\\node_modules",
+      "--properties",
+      "es2015",
+      "browser",
+      "module",
+      "main",
+      "--first-only",
+      "--create-ivy-entry-points",
+      "--async",
+      "--tsconfig",
+      "C:/dev/desafio/front/processo-app/tsconfig.app.json"
+    ],
+    "nodejsVersion": "v12.16.2",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.2",
+      "v8": "7.8.279.23-node.34",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1e",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.2/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.21996",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2720296,
+        "nice": 0,
+        "sys": 4919062,
+        "idle": 169884968,
+        "irq": 2113625
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2836796,
+        "nice": 0,
+        "sys": 1848937,
+        "idle": 172838265,
+        "irq": 82515
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 3881312,
+        "nice": 0,
+        "sys": 3025562,
+        "idle": 170617125,
+        "irq": 41671
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 4641265,
+        "nice": 0,
+        "sys": 1946843,
+        "idle": 170935890,
+        "irq": 35890
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2619296,
+        "nice": 0,
+        "sys": 1147046,
+        "idle": 173757640,
+        "irq": 20468
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2741015,
+        "nice": 0,
+        "sys": 1167125,
+        "idle": 173615843,
+        "irq": 23156
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 3222937,
+        "nice": 0,
+        "sys": 1217437,
+        "idle": 173083609,
+        "irq": 20093
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2806875,
+        "nice": 0,
+        "sys": 1528703,
+        "idle": 173188406,
+        "irq": 20625
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 3432671,
+        "nice": 0,
+        "sys": 1768015,
+        "idle": 172323296,
+        "irq": 45468
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2826875,
+        "nice": 0,
+        "sys": 1858750,
+        "idle": 172838359,
+        "irq": 52578
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 3105265,
+        "nice": 0,
+        "sys": 1661406,
+        "idle": 172757312,
+        "irq": 48453
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 3168843,
+        "nice": 0,
+        "sys": 1812328,
+        "idle": 172542812,
+        "irq": 49734
+      }
+    ],
+    "host": "DESKTOP-REC82OS"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff69a182309",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a186869",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a1856e8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a2add82",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69aaca27e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69aab2351",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a97e8ac",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a95a7c3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a958acb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a98406d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a985da4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a97be03",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a97a474",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a99b7bb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a9a6c4a",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a9a6a1c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a9a67c5",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a6f8a3b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69af1730d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69af3fd5f",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69af58f0b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae9c2bc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae997f1",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69ae993dc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a9d7f63",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a9d78e6",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69aaa895d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a2d658e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a2d67c7",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a2d4eaa",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a2695cc",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a2d6223",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a156a9c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69afcf3f8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff856ce54e0",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff85858485b",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 33861632,
+    "totalCommittedMemory": 33861632,
+    "usedMemory": 22283016,
+    "availableMemory": 2173572552,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 8388608,
+        "committedMemory": 8388608,
+        "capacity": 4189824,
+        "used": 98360,
+        "available": 4091464
+      },
+      "old_space": {
+        "memorySize": 7217152,
+        "committedMemory": 7217152,
+        "capacity": 5629920,
+        "used": 4816608,
+        "available": 813312
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 430080,
+        "capacity": 163136,
+        "used": 163136,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 790528,
+        "committedMemory": 790528,
+        "capacity": 452800,
+        "used": 452800,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 16723968,
+        "committedMemory": 16723968,
+        "capacity": 16716520,
+        "used": 16716520,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 4189824,
+        "used": 0,
+        "available": 4189824
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 0.359,
+    "kernelCpuSeconds": 0.062,
+    "cpuConsumptionPercent": 42.1,
+    "maxRss": 64819200,
+    "pageFaults": {
+      "IORequired": 20095,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 41,
+      "writes": 7
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\MR\\AppData\\Roaming",
+    "BROWSERSLIST_IGNORE_OLD_DATA": "1",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-REC82OS",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "DOTNET_CLI_TELEMETRY_OPTOUT": "0",
+    "dp0": "C:\\Users\\MR\\AppData\\Roaming\\npm\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\MR",
+    "IntelliJ IDEA Community Edition": "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2023.3.5\\bin;",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21",
+    "LOCALAPPDATA": "C:\\Users\\MR\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-REC82OS",
+    "MAVEN_HOME": "C:\\dev\\apache-maven-3.9.6",
+    "NUMBER_OF_PROCESSORS": "12",
+    "OneDrive": "C:\\Users\\MR\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Java\\jdk-21\\bin;C:\\dev\\apache-maven-3.9.6\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\MR\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2023.3.5\\bin;;C:\\Users\\MR\\AppData\\Roaming\\npm;C:\\Users\\MR\\AppData\\Local\\Programs\\Microsoft VS Code\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "POWERSHELL_TELEMETRY_OPTOUT": "0",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "a502",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\MR\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\MR\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-REC82OS",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-REC82OS",
+    "USERNAME": "MR",
+    "USERPROFILE": "C:\\Users\\MR",
+    "WEBPACK_DEV_SERVER": "true",
+    "windir": "C:\\Windows",
+    "ZES_ENABLE_SYSMAN": "1",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\SYSTEM32\\bcrypt.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\SYSTEM32\\powrprof.dll",
+    "C:\\Windows\\SYSTEM32\\UMPDC.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\bcryptprimitives.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\system32\\napinsp.dll",
+    "C:\\Windows\\system32\\pnrpnsp.dll",
+    "C:\\Windows\\system32\\wshbth.dll",
+    "C:\\Windows\\system32\\nlansp_c.dll"
+  ]
+}

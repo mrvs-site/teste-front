@@ -1,0 +1,421 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20240526.033405.17480.0.001.json",
+    "dumpEventTime": "2024-05-26T03:34:05Z",
+    "dumpEventTimeStamp": "1716705245608",
+    "processId": 17480,
+    "threadId": null,
+    "cwd": "C:\\dev\\desafio\\front\\processo-app",
+    "commandLine": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:/dev/desafio/front/processo-app/node_modules/@angular/compiler-cli/ngcc/src/execution/cluster/worker.js",
+      "--source",
+      "C:\\dev\\desafio\\front\\processo-app\\node_modules",
+      "--properties",
+      "es2015",
+      "browser",
+      "module",
+      "main",
+      "--first-only",
+      "--create-ivy-entry-points",
+      "--async",
+      "--tsconfig",
+      "C:/dev/desafio/front/processo-app/tsconfig.app.json"
+    ],
+    "nodejsVersion": "v12.16.2",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.16.2",
+      "v8": "7.8.279.23-node.34",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1e",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.2/node-v12.16.2.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.16.2/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.21996",
+    "osVersion": "Windows 10 Pro",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2816765,
+        "nice": 0,
+        "sys": 5051812,
+        "idle": 172463343,
+        "irq": 2172984
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2940890,
+        "nice": 0,
+        "sys": 1923015,
+        "idle": 175467687,
+        "irq": 84265
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 4026890,
+        "nice": 0,
+        "sys": 3135234,
+        "idle": 173169468,
+        "irq": 42609
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 4830640,
+        "nice": 0,
+        "sys": 2007156,
+        "idle": 173493796,
+        "irq": 36468
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2724718,
+        "nice": 0,
+        "sys": 1187937,
+        "idle": 176418921,
+        "irq": 20968
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2839906,
+        "nice": 0,
+        "sys": 1209656,
+        "idle": 176282015,
+        "irq": 23734
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 3354375,
+        "nice": 0,
+        "sys": 1267093,
+        "idle": 175710109,
+        "irq": 20546
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2935671,
+        "nice": 0,
+        "sys": 1580562,
+        "idle": 175815343,
+        "irq": 22078
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 3519328,
+        "nice": 0,
+        "sys": 1826375,
+        "idle": 174985875,
+        "irq": 46562
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 2938484,
+        "nice": 0,
+        "sys": 1934218,
+        "idle": 175458875,
+        "irq": 54515
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 3200734,
+        "nice": 0,
+        "sys": 1726109,
+        "idle": 175404734,
+        "irq": 50359
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "speed": 2592,
+        "user": 3294296,
+        "nice": 0,
+        "sys": 1880093,
+        "idle": 175157187,
+        "irq": 50906
+      }
+    ],
+    "host": "DESKTOP-REC82OS"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff69a182309",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a186869",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a1856e8",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a2add82",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69aaca27e",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69aab2351",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a97e8ac",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a95a7c3",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a958acb",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a98406d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a985da4",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a97be03",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a97a474",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a99b67d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69a70125f",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff69af1730d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x0000002bdfb6a5f0",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 159473664,
+    "totalCommittedMemory": 159473664,
+    "usedMemory": 115973368,
+    "availableMemory": 2076492056,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16759296,
+        "used": 1948848,
+        "available": 14810448
+      },
+      "old_space": {
+        "memorySize": 90316800,
+        "committedMemory": 90316800,
+        "capacity": 80238312,
+        "used": 80211232,
+        "available": 27080
+      },
+      "code_space": {
+        "memorySize": 2002944,
+        "committedMemory": 2002944,
+        "capacity": 880896,
+        "used": 880896,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 1052672,
+        "capacity": 715600,
+        "used": 715600,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 32235520,
+        "committedMemory": 32235520,
+        "capacity": 32181200,
+        "used": 32181200,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759296,
+        "used": 0,
+        "available": 16759296
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 5.718,
+    "kernelCpuSeconds": 0.718,
+    "cpuConsumptionPercent": 160.9,
+    "maxRss": 190570496,
+    "pageFaults": {
+      "IORequired": 131055,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 645,
+      "writes": 6
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\MR\\AppData\\Roaming",
+    "BROWSERSLIST_IGNORE_OLD_DATA": "1",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "DESKTOP-REC82OS",
+    "ComSpec": "C:\\Windows\\system32\\cmd.exe",
+    "DOTNET_CLI_TELEMETRY_OPTOUT": "0",
+    "dp0": "C:\\Users\\MR\\AppData\\Roaming\\npm\\",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\MR",
+    "IntelliJ IDEA Community Edition": "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2023.3.5\\bin;",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-21",
+    "LOCALAPPDATA": "C:\\Users\\MR\\AppData\\Local",
+    "LOGONSERVER": "\\\\DESKTOP-REC82OS",
+    "MAVEN_HOME": "C:\\dev\\apache-maven-3.9.6",
+    "NUMBER_OF_PROCESSORS": "12",
+    "OneDrive": "C:\\Users\\MR\\OneDrive",
+    "OS": "Windows_NT",
+    "Path": "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Java\\jdk-21\\bin;C:\\dev\\apache-maven-3.9.6\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\Users\\MR\\AppData\\Local\\Microsoft\\WindowsApps;;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2023.3.5\\bin;;C:\\Users\\MR\\AppData\\Roaming\\npm;C:\\Users\\MR\\AppData\\Local\\Programs\\Microsoft VS Code\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "POWERSHELL_TELEMETRY_OPTOUT": "0",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "a502",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "SESSIONNAME": "Console",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\Windows",
+    "TEMP": "C:\\Users\\MR\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\MR\\AppData\\Local\\Temp",
+    "USERDOMAIN": "DESKTOP-REC82OS",
+    "USERDOMAIN_ROAMINGPROFILE": "DESKTOP-REC82OS",
+    "USERNAME": "MR",
+    "USERPROFILE": "C:\\Users\\MR",
+    "WEBPACK_DEV_SERVER": "true",
+    "windir": "C:\\Windows",
+    "ZES_ENABLE_SYSMAN": "1",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Windows\\SYSTEM32\\ntdll.dll",
+    "C:\\Windows\\System32\\KERNEL32.DLL",
+    "C:\\Windows\\System32\\KERNELBASE.dll",
+    "C:\\Windows\\System32\\WS2_32.dll",
+    "C:\\Windows\\System32\\RPCRT4.dll",
+    "C:\\Windows\\System32\\PSAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\Windows\\System32\\ADVAPI32.dll",
+    "C:\\Windows\\System32\\ucrtbase.dll",
+    "C:\\Windows\\System32\\msvcrt.dll",
+    "C:\\Windows\\System32\\sechost.dll",
+    "C:\\Windows\\System32\\USER32.dll",
+    "C:\\Windows\\System32\\win32u.dll",
+    "C:\\Windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\Windows\\SYSTEM32\\USERENV.dll",
+    "C:\\Windows\\System32\\GDI32.dll",
+    "C:\\Windows\\System32\\gdi32full.dll",
+    "C:\\Windows\\System32\\msvcp_win.dll",
+    "C:\\Windows\\System32\\CRYPT32.dll",
+    "C:\\Windows\\SYSTEM32\\WINMM.dll",
+    "C:\\Windows\\SYSTEM32\\bcrypt.dll",
+    "C:\\Windows\\System32\\IMM32.DLL",
+    "C:\\Windows\\SYSTEM32\\powrprof.dll",
+    "C:\\Windows\\SYSTEM32\\UMPDC.dll",
+    "C:\\Windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\Windows\\system32\\uxtheme.dll",
+    "C:\\Windows\\System32\\combase.dll",
+    "C:\\Windows\\system32\\mswsock.dll",
+    "C:\\Windows\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\Windows\\System32\\bcryptprimitives.dll",
+    "C:\\Windows\\System32\\NSI.dll",
+    "C:\\Windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\Windows\\system32\\wshbth.dll"
+  ]
+}
