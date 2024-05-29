@@ -1,0 +1,24 @@
+<mat-card style="text-align: center;">
+    <mat-card-header style="display: block">
+        <mat-card-title >
+         Processo<br/>
+        </mat-card-title>
+        
+    </mat-card-header>
+    <mat-card-content class="alinhamento">
+        <p>
+            <strong>NPU - {{ p.npu }}</strong> <br/>
+            <strong>UF - {{ p.uf }}</strong> <br/>
+            <strong>MUNICÍPIO - {{ p.municipio }}</strong><br/> 
+            <strong>DATA DE CADASTRO - {{ p.dataCadastro  | date: "dd/MM/yyyy - HH:mm:ss"}}</strong><br/> 
+            <strong>DATA DE VISUALIZAÇÃO - {{ p.dataVisualizacao | date: "dd/MM/yyyy - HH:mm:ss"}}</strong><br/> 
+            <strong >DOCUMENTO - {{ p.nomeDocumento }}</strong>
+        </p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="fechar()">Fechar</button>
+        <button mat-raised-button color="primary" *ngIf="p.documento" (click)="downloadPDF(p)">download</button>
+    </mat-card-actions>
+
+
+</mat-card>

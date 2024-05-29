@@ -20,14 +20,21 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSortModule } from '@angular/material/sort';
 import {MatSelectModule} from '@angular/material/select';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 
 import { ProcessoListaComponent } from './processo-lista/processo-lista.component';
-import { ProcessoService } from './service/processo.service';
+import { ConfirmationDialog } from './util/confirmation-dialog.component';
+import { ProcessoDetalheComponent } from './processo-detalhe/processo-detalhe.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProcessoListaComponent
+    ProcessoDetalheComponent,
+    ProcessoListaComponent,
+    ConfirmationDialog
   ],
   imports: [
     BrowserModule,
@@ -44,12 +51,13 @@ import { ProcessoService } from './service/processo.service';
     MatSortModule,
     MatSelectModule,
     MatDialogModule,
+    MatTooltipModule,
     MatSnackBarModule,
     MatPaginatorModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule,   
   ],
-  providers: [ProcessoService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

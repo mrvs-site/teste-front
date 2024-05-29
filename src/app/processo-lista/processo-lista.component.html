@@ -12,25 +12,51 @@
         </ng-template>
 
       <mat-card>
-            <table mat-table [dataSource]="processos" matSort (matSortChange)="ordernarColuna($event)" matSort class="tela-toda">
+            <table  mat-table [dataSource]="processos" matSort (matSortChange)="ordernarColuna($event)" matSort class="tela-toda">
              
-                <ng-container matColumnDef="npu">
+                <ng-container matColumnDef="npu" >
                     <th mat-header-cell *matHeaderCellDef mat-sort-header="npu"> NPU </th>
-                    <td mat-cell *matCellDef="let p"> {{ p.npu }} </td>
+                    <td mat-cell *matCellDef="let p" (click)="visualizarProcesso(p)">
+                        {{ p.npu }}
                 </ng-container>
 
                 <ng-container matColumnDef="uf">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header="uf"> UF </th>
-                    <td mat-cell *matCellDef="let p"> {{ p.uf }} </td>
+                    <td mat-cell *matCellDef="let p" (click)="visualizarProcesso(p)"> {{ p.uf }} </td>
                 </ng-container>
 
                 <ng-container matColumnDef="dataCadastro">
-                    <th mat-header-cell *matHeaderCellDef mat-sort-header="dataCadastro"> DATA DE CADASTRO </th>
-                    <td mat-cell *matCellDef="let p"> {{ p.dataCadastro }} </td>
+                    <th mat-header-cell *matHeaderCellDef  mat-sort-header="dataCadastro"> DATA DE CADASTRO </th>
+                    <td mat-cell  *matCellDef="let p" (click)="visualizarProcesso(p)"> {{ p.dataCadastro | date: "dd/MM/yyyy - HH:mm:ss" }}</td>
                 </ng-container>
 
+                <ng-container matColumnDef="editar">
+                    <th mat-header-cell *matHeaderCellDef ></th>
+                    <td mat-cell *matCellDef="let p"> 
+                       
+                        <button mat-raised-button color="primary"  (click)="skipToLast()"  matTooltip="Editar Processo" >
+                            <i class="fa fa-edit"></i>
+                        </button>
+
+                    </td>
+                </ng-container>
+                
+                <ng-container matColumnDef="deletar">
+                    <th mat-header-cell *matHeaderCellDef ></th>
+                    <td mat-cell *matCellDef="let p" (click)="preparaDelecao(p)"> 
+                       
+                        <button mat-raised-button color="primary"   matTooltip="Deletar Processo" >
+                            <i class="fa fa-trash">  
+                            </i>
+                        </button>
+
+                    </td>
+                </ng-container>
+
+                
+
                 <tr mat-header-row *matHeaderRowDef="colunas"></tr>
-                <tr mat-row *matRowDef="let how; columns: colunas;"></tr>
+                <tr class="info_table" mat-row  *matRowDef="let how; columns: colunas;" ></tr>
 
             </table>
 
@@ -47,7 +73,7 @@
 
     </mat-tab>
 
-    <mat-tab>
+    <mat-tab [label]="tab"> 
     
         <ng-template mat-tab-label>
             <mat-icon>face</mat-icon>
@@ -62,7 +88,7 @@
         <form [formGroup]="formulario" (ngSubmit)="submit()">
             <mat-form-field class="tela-toda">
                 <mat-label>NPU:</mat-label>
-                <input matInput formControlName="npu" placeholder="Digite o NPU" >
+                <input matInput  formControlName="npu" placeholder="Digite o NPU" >
             </mat-form-field>
         
             <div *ngIf="formulario.controls.npu.errors && !formulario.controls.npu.pristine">
@@ -70,7 +96,6 @@
                     Campo NPU obrigatório
                 </div>
             </div>
-        
           
             <mat-form-field>
               <mat-label>UF</mat-label>
@@ -112,6 +137,10 @@
                 </div>
             </mat-form-field>
         
+
+        
+
+
             <div *ngIf="formulario.controls.documento.errors && !formulario.controls.documento.pristine">
                 <div *ngIf="formulario.controls.documento.errors.required">
                     Campo Dcumento obrigatório

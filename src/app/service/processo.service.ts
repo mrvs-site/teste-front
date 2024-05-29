@@ -4,6 +4,7 @@ import { Processo } from '../model/processo';
 import { Observable } from 'rxjs';
 import { PaginaProcesso } from '../model/pagina.processo';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -31,7 +32,13 @@ export class ProcessoService {
         return this.http.post<any>(`${this.url}`,form);
       }
 
-
+      deletar(id: number):Observable<any>{
+        return this.http.delete<any>(`${this.url}/${id}`);
+      }
+  
+      dataVisualizacao(id: number):Observable<any>{
+        return this.http.patch<any>(`${this.url}/${id}`, null);
+      }
 
 }
 

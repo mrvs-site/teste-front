@@ -6,3 +6,13 @@
 .tela-metade{
     width: 50%;
 }
+
+.info_table:hover
+{
+    background-color: #8788993b !important;
+    cursor:pointer;
+}
+
+.alinhamento{
+    text-align: left;
+}
